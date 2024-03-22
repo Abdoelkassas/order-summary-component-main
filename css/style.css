@@ -1,0 +1,141 @@
+/* Global Rules Start */
+:root{
+    --Dark-blue: hsl(223, 47%, 23%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Pale-blue: hsl(225, 100%, 98%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Red Hat Display", sans-serif;
+    background-size: cover;
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pale-blue);
+}
+
+
+
+
+
+
+
+/* Global Rules End */
+
+
+/* Main styling */
+
+.card{
+    background-color: #fff;
+    max-width: 25rem;
+    margin-inline: 1rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 0px 0px 15px 0px hsla(0, 0%, 0%, 0.2);
+}
+
+
+.card .image{
+    max-width: 100%;
+}
+
+.card .content{
+    padding: 0 40px;
+    margin: 20px 0;
+    text-align: center;
+}
+.content h1{
+    margin: 10px 0;
+    font-size: 28px;
+    font-weight: 900;
+}
+.content p{
+    font-size: 16px;
+    color: var(--Desaturated-blue);
+    line-height: 1.6;
+}
+.content .plan{
+    margin: 20px auto;
+    width: 100%;
+    background-color: var(--Pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+@media (max-width: 600px){
+    .attribution{
+        display:none
+    }
+}
+.plan .planContent{
+    display: flex;
+    align-items: center;
+}
+
+.plan .planContent .pricing{
+    display: grid;
+    gap: 2px;
+    margin-left: 10px;
+}
+.plan .change{
+    margin-right: 5px;
+}
+.plan .change:hover{
+    text-decoration: none;
+    opacity: .6;
+}
+
+.content .proceedButton{
+    width: 100%;
+    background-color: var(--Bright-blue);
+    border: none;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0px 7px 15px 0px #0000004d;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.proceedButton:hover{
+    opacity: .7;
+}
+.content .cancel{
+    cursor: pointer;
+    width: fit-content;
+    margin: 5px auto;
+    color: var(--Desaturated-blue);
+    font-weight: 900;
+
+}
+.content .cancel:hover{
+    color: #000;
+}
+
+@media (max-width:768px) {
+    .card{
+        width: 350px;
+    }
+}
